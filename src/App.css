@@ -1,3 +1,6 @@
+.App {
+  text-align: center;
+}
 .beginning, .ending {
     display: block;
     top: 10px;
@@ -14,7 +17,7 @@
   z-index: 2;
 }
 .ending {
-  display: none;
+  display: block;
 }
 h1{
   font-family: 'NarbutClassicRegular';
@@ -63,9 +66,9 @@ h1{
 .picture__Name{
   position: absolute;
   height: 12%;
-  margin: 0 4px 4px 4px;
+  margin: 0 4px -4px 4px;
   padding: 2px;
-  left: 0; right: 0; bottom: 4px;
+  left: 0; right: 0; bottom: 0;
 }
 .picture h4{
   font-family: 'NarbutClassicRegular';
@@ -78,13 +81,14 @@ h1{
   width: 47%;
   margin: 2px;
   padding: 6px;
-  background-color: #f3ffff;
+  background-color: #f3ffcf;
   float: left;
 }
 .questions h4{
   font-size: 17px;
   margin: 2px 2px 2px 11px;
 }
+
 ul{
   list-style-type: none;
   margin-left: 4px;
@@ -104,6 +108,7 @@ li{
 li:hover{
   background-color: #bde0ff;
 }
+
 label{
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
@@ -112,7 +117,7 @@ label{
   vertical-align: middle;
 }
 #finishWide{
-  display: none;
+  display: block;
   position: absolute;
   width: 95%;
   height: 95%;  
@@ -207,7 +212,7 @@ span{
   padding: 3px;
   font-size: 12px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   body{ background: linear-gradient(white, #a9f5f2, white, #a9f5f2, white);}
   .picture, .questions {width: 96%; min-height: 288px;}
   li  { height: 32px; margin: 2px}
