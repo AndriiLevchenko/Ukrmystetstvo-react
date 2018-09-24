@@ -60,9 +60,10 @@ class AnswersList extends Component {
 		console.log(this.state.count);
 
 		return (	
-		
+			
 			<div>	
 				{this.state.isOpenBeginning && <section><Beginning click={this.hideBeginning}/></section>}
+				<h1> Українське образотворче мистецтво  </h1>
 			<div className='picture'>		
 				<div className='picture__Picture'><Picture src={answers[this.state.count].sorce} alt='virna' /></div>
 				<div className='picture__Name'>{answers[this.state.count].denotation}</div>
